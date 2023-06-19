@@ -169,7 +169,7 @@ def main():
 
     #get some random traning images
     dataiter = iter(train_loader)
-    images, labels = dataiter.next()
+    images, labels = dataiter.__next__()
     images = images.to(device)
 
     # show batch images
